@@ -1,0 +1,56 @@
+<html>
+<head>
+<h1> Student Information Sheet</h1>
+<h1> Personal Info</h1>
+</head>
+<body>
+<p> Enter name: </p>
+<input id="name" name="name"class="Name" type="text" placeholder="Enter Full name" required>` <br>
+<p> Enter Age: </p>
+<input id="name" Age="Age"class="Name" type="text" placeholder="Enter Age" required>`
+
+<h1> Contact Information</h1>
+<p> Phone number: </p>
+<input id="name" number="number"class="Name" type="text" placeholder="Enter Phone number" required>`<br>
+<p> Enter email: </p>
+<input id="name" email="email"class="Name" type="text" placeholder="Enter email address" required>`
+<p> Enter Mailing Address: </p>
+<input id="name" Mailing Address="Mailing Address"class="Name" type="text" placeholder="Enter Mailing Address" required>`
+
+<h1> Academic Information</h1>
+<p> Enter Program: </p>
+<input id="name" Program="Program"class="Name" type="text" placeholder="Enter Program" required>`
+<p> Enter IdNumber: </p>
+<input id="name" IdNumber="IdNumber"class="Name" type="text" placeholder="Enter IdNumber" required>`
+<p> Enter Year Level: </p>
+<input id="name" Level="Level"class="Name" type="text" placeholder="Enter Level" required>`
+<p> Enter Section: </p>
+<input id="name" Section="Section"class="Name" type="text" placeholder="Enter Section" required>`
+<br><br>
+
+<input type="Submit" onclick="submitted()"> <br> <br>
+<a id="new" href="www.google.com"> </a> <br>
+<p> Thank you </p>
+<script>
+
+      function submitted()
+      {
+        var a = document.getElementById("name").value;
+
+        if (a=="")
+        {
+      document.getElementById("new").innerHTML="";
+      alert("Please Enter a valid name!");
+        }
+        else if (a==" ") {
+        document.getElementById("new").innerHTML=""
+      alert("Please Enter a valid name!");
+        }
+        else
+        {
+          document.getElementById("new").innerHTML="Thank you, " + a + ". " + "Click here to continue.";
+        }
+      }
+</script>
+</body>
+</html>
